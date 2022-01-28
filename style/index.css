@@ -123,6 +123,7 @@ table {
   border-spacing: 0;
 }
 
+/* General styles */
 * {
   box-sizing: border-box;
   /* border: 1px solid grey; */
@@ -134,112 +135,287 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.5;
   font-family: "Shadows Into Light";
-  text-align: center;
   background-image: url(/images/background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 section {
-  margin: 5% 0 0 0;
+  margin: 2%;
 }
+button {
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+  background-color: rgba(225, 241, 243, 0.897);
+  width: 15%;
+  border-radius: 5px;
+  padding: 1% 1.5%;
+}
+a {
+  color: black;
+  justify-content: space-around;
+  text-decoration: none;
+  font-family: "Architects Daughter", cursive;
+}
+/* header / nav styles */
+
 header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: rgba(255, 255, 255, 0.842);
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 h1 {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0 5%;
   font-family: "Architects Daughter", cursive;
   font-size: 6rem;
-  background-color: rgba(255, 255, 255, 0.842);
-  border-radius: 20px;
+  line-height: 1.5;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.637);
+  border-radius: 30px;
 }
 
-.headerNav {
+nav {
+  width: 50%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  background-color: rgba(240, 248, 255, 0);
 }
-i {
-  height: auto;
-  width: 20vh;
-  margin-left: 5%;
-  padding: 5% 5%;
-  color: black;
-  background-color: rgba(182, 214, 219, 0.842);
-  border-radius: 20px;
+nav button{
+  background-color: rgba(240, 248, 255, 0);
+  border: 0;
 }
-.topContainer {
+/* profile photo and bio styles */
+
+#top {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.photo {
-  padding: 1%;
-  height: 80vh;
-  width: 80vh;
+
+#top .left {
+  width: 40%;
+  margin: 1% 2%;
 }
-.photo img {
-  border-radius: 200px;
+
+#top img {
+  border-radius: 100%;
 }
-.text {
-  padding: 0;
+
+#top .right {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-content: flex-start;
-  font-family: "Architects Daughter", cursive;
-  font-size: 4rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#top .right h2,
+#top .right p {
   background-color: rgba(223, 235, 236, 0.74);
   border-radius: 100px;
+  padding: 5%;
+  justify-content: center;
 }
-.text .bio {
-  font-size: 2rem;
+
+#top .right h2 {
+  font-size: 4rem;
 }
-.text i {
-  padding: 8% 5%;
-  height: 10vh;
-  width: 10vh;
-  color: black;
-  background-color: rgba(255, 255, 255, 0);
+#top button {
+  margin: 3% 15%;
+  padding: 1.5% 0;
 }
-.bottomContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: space-around;
+
+/* gallery styles */
+
+#bottom {
+  width: 90%;
+  margin: 5%;
   background-color: rgba(225, 241, 243, 0.726);
   border-radius: 20px;
 }
-.bottomContainer img {
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.gallery .image{
+  width: 25%;
+  height: 25%;
+}
+
+#bottom img {
   width: 50vh;
   height: 50vh;
   padding: 4%;
   border-radius: 25px;
 }
-.bottomContainer p {
+
+#bottom p {
   font-weight: bold;
   background-color: white;
   border-radius: 40px;
+  text-align: center;
 }
+
+/* footer / contact styles */
 footer {
+  font-weight: bold;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  padding: 8% 0;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
 }
-footer i {
-  margin: 0;
-  padding: 0;
-  color: black;
-  background-color: rgba(240, 248, 255, 0);
+
+footer button{
+  padding: 1% 0;
+  width: 10%;
+}
+
+@media (max-width: 800px) {
+  section{
+    margin: .5%;
+  }
+  header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  nav{
+    border: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  nav button{
+    border: 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: none;
+    padding: 20%;
+    background-color: rgba(225, 241, 243, 0);
+  }
+  nav a{
+    border: 0;
+    width: 100%;
+    padding: 20%;
+  }
+  #top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #top .left{
+    width: 80%;
+  }
+  #top .right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery .image{
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px){
+  section {
+    margin: 0%;
+  }
+  #bottom {
+    width: 90%;
+  }
+  .gallery {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .gallery .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  footer button{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+  }
+}
+
+@media (max-width: 500px){
+  .right button{
+    width: 30%;
+  }
+}
+
+@media (max-width: 400px){
+  h1{
+    font-size: 5rem;
+  }
+  nav{
+    width: 90%;
+  }
+  .right button, .right h2{
+    display: none;
+  }
+  .right p{
+    font-size: 2rem;
+    padding: 0%;
+    margin: 0%;
+  }
+  footer button{
+    text-align: center;
+    width: 50%;
+    padding: 0 8%;
+  }
+}
+
+@media (max-width: 377px){
+  h1{
+    font-size: 4.5rem;
+  } 
+}
+
+@media (max-width: 340px) {
+  h1{
+    font-size: 4rem;
+  }
+  nav{
+    width: 80%;
+  }
+}
+
+@media (max-width: 317px){
+  nav{
+    width: 70%;
+  }
+}
+
+@media (max-width: 304px){
+  h1{
+    text-align: center;
+  }
+}
+
+@media (max-width: 279px){
+  nav{
+    width: 50%;
+  }
 }

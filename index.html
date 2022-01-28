@@ -14,94 +14,124 @@
     <link rel="stylesheet" href="/style/index.css" />
     <title>Rebecca's Portfolio</title>
   </head>
-
-  <header>
-    <h1>Rebecca Stone</h1>
-    <nav class="headerNav">
-      <a href="/index.html" class="home"><i class="fas fa-user"></i></a>
-      <a href="/about.html" class="about"
-        ><i class="far fa-address-card"></i
-      ></a>
-      <a href="/contact.html" class="contact"
-        ><i class="fas fa-mobile-alt"></i
-      ></a>
-      <a href="/projects.html" class="projects"
-        ><i class="fas fa-marker"></i
-      ></a>
-    </nav>
-  </header>
   <body>
-    <section class="topContainer">
-      <div class="photo">
+    <header>
+      <h1>Rebecca Stone</h1>
+      <div>
+        <nav>
+          <button class="home">
+            <a href="/index.html"><i class="fas fa-user fa-2x"></i></a>
+          </button>
+          <button class="about">
+            <a href="/about.html"><i class="far fa-address-card fa-2x"></i></a>
+          </button>
+          <button class="contact">
+            <a href="/contact.html"><i class="fas fa-mobile-alt fa-2x"></i></a>
+          </button>
+          <button class="project">
+            <a href="/projects.html"><i class="fas fa-marker fa-2x"></i></a>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <section id="top">
+      <div class="left">
         <img
           src="/images/profilePhoto.jpg"
-          alt="Profile Photo"
-          class="profilePic"
+          alt="A photo of a girl looking up and to the side"
         />
       </div>
-      <div class="text">
+      <div class="right">
         <h2>Rebecca Stone</h2>
-        <a href="/projects.html" class="projects"
-          ><i class="fas fa-marker"></i
-        ></a>
-        <p class="bio">
-          Born and raised in the midwest.<br />
-          I am a animal crossing fanatic!<br />
-          I just love designing islands.<br />
-          Take a look at some of my featured <br />pictures below. If you like
-          them, go<br />
-          ahead and check out my other ones<br />
-          by clicking the pen above.
+        <button><a href="/projects.html">Projects</a></button>
+        <p>
+          Born and raised in the midwest. I am a animal crossing fanatic! I just
+          love designing islands. Take a look at some of my featured pictures
+          below. If you like them, go ahead and check out my other ones!
         </p>
       </div>
     </section>
-    <section class="bottomContainer">
-      <div class="img1">
-        <img
-          src="/images/beachHouse.jpg"
-          alt="beach house at night"
-          class="1"
-        />
-        <p>Sheb's house on the beach</p>
-      </div>
-      <div class="img2">
-        <img
-          src="/images/boatPath.jpg"
-          alt="a narrow path to a boat"
-          class="2"
-        />
-        <p>Alley way to Redd's boat</p>
-      </div>
-      <div class="img3">
-        <img src="/images/bones.jpg" alt="foggy photo" class="3" />
-        <p>A spooky entrance</p>
-      </div>
-      <div class="img4">
-        <img src="/images/ducks.jpg" alt="duck pond" class="4" />
-        <p>My duck pond</p>
-      </div>
-      <div class="img5">
-        <img src="/images/livingRoom.jpg" alt="living room setting" class="5" />
-        <p>Cozy living room</p>
-      </div>
-      <div class="img6">
-        <img src="/images/wedding.jpg" alt="wedding" class="6" />
-        <p>Wedding on the beach</p>
-      </div>
-      <div class="img7">
-        <img src="/images/fourtunePC.jpg" alt="fortune telling" class="7" />
-        <p>Seeing a fortune teller</p>
-      </div>
-      <div class="img8">
-        <img src="/images/boatRide.jpg" alt="special thing" class="8" />
-        <p>Scenic boat ride</p>
+    <section id="bottom">
+      <div class="gallery">
+        <div class="image">
+          <div>
+            <img
+              src="/images/beachHouse.jpg"
+              alt="A straw cartoon house on the beach at night"
+            />
+            <p>Sheb's house on the beach</p>
+          </div>
+        </div>
+        <div class="image">
+          <div>
+            <img
+              src="/images/boatPath.jpg"
+              alt="A cartoon of a narrow path to a boat, with a girl running toward it"
+            />
+            <p>Alley way to Redd's boat</p>
+          </div>
+        </div>
+        <div class="image">
+          <div>
+            <img
+              src="/images/bones.jpg"
+              alt="A cartoon photo of an angel looking up at a deer made of bones. The air is filled with fog."
+            />
+            <p>A spooky entrance</p>
+          </div>
+        </div>
+        <div class="image">
+          <div>
+            <img
+              src="/images/ducks.jpg"
+              alt="A cartoon photo of some ducks sitting in puddles"
+            />
+            <p>Duck pond</p>
+          </div>
+        </div>
+        <div class="image">
+          <div>
+            <img
+              src="/images/livingRoom.jpg"
+              alt="A cartoon of a living room setting, with a fireplace and chair made from a peach"
+            />
+            <p>Cozy living room</p>
+          </div>
+        </div>
+        <div class="image">
+          <div>
+            <img
+              src="/images/wedding.jpg"
+              alt="A cartoon photo of an elegant wedding setting on the beach"
+            />
+            <p>Wedding on the beach</p>
+          </div>
+        </div>
+        <div class="image">
+          <div>
+            <img
+              src="/images/fourtunePC.jpg"
+              alt="A cartoon photo of a deer and cat getting their fortune read"
+            />
+            <p>Seeing a fortune teller</p>
+          </div>
+        </div>
+        <div class="image">
+          <div>
+            <img
+              src="/images/boatRide.jpg"
+              alt="A cartoon photo of a girl riding a boat at night with a turtle"
+            />
+            <p>Night time boat ride</p>
+          </div>
+        </div>
       </div>
     </section>
+    <footer>
+      <h2>Like What You See?</h2>
+      <button>
+        <a href="http://linkedin.com/in/rebecca-stone-734443229">Contact Me!</a>
+      </button>
+    </footer>
   </body>
-  <footer>
-    <p>Like what you see?</p>
-    <a href="http://linkedin.com/in/rebecca-stone-734443229" class="contact"
-      ><i class="fab fa-linkedin"></i>
-    </a>
-  </footer>
 </html>
